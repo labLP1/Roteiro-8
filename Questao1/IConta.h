@@ -3,19 +3,10 @@
 #include <iostream>
 
 class IConta{
-    private:
-    double valor;
-    
     public:
-    virtual void sacar(double valor);
-    virtual void depositar(double valor);
-    
-    double getsacar();  
-    double getdepositar();
-    
-    void setsacar(double valor);
-    void setdepositar(double valor);
-    
+        virtual void sacar(double valor) = 0;
+        virtual void depositar(double valor) = 0;
+          
 };
 
 #endif
